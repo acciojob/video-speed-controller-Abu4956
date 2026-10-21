@@ -1,2 +1,66 @@
 
+:root {
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 0px;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #193549;
+    color: white;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+h2 span {
+    color: var(--base);
+}
+
+.controls {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.controls label {
+    font-size: 18px;
+}
+
+.controls input {
+    width: 100px;
+    cursor: pointer;
+}
+
+img {
+    width: min(100%, 700px);
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .controls {
+        gap: 12px;
+    }
+}
+
 /* Your CSS Code here. */
